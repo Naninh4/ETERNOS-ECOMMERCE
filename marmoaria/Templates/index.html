@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <section  class="container-fluid flex-column" id="banner">
+        <div class="row d-flex w-100">
+            <div class="col-4 p-0 d-flex justify-content-center align-items-center">
+                <img id="img-flor" class="img-fluid " src="/static/img/flor.png" alt="flor de aquarela">
+            </div>
+    
+            <div class="col-8 p-2 d-flex justify-content-center align-items-center">
+                <div class="row align-items-end flex-column ">
+                    <div class="col-12 p-0">
+                        <img id="img-slogan" class="img-fluid " src="/static/img/Slogan.png" alt="Slogan da empresa">
+    
+                    </div>
+                </div>
+               
+            
+            </div>
+        </div>
+        <div class="row w-100 p-0 d-flex justify-content-end align-items-end">
+            <button id="btn-contatenos">Contate-nos</button>
+        </div>
+    </section>
+    <section id="comecar" class="container-fluid d-flex justify-content-center">
+        <section class="row d-flex w-100 justify-content-around align-items-center p-lg-5 p-sm-2">
+            <div class="col-md-6 col-sm-12 d-flex justify-content-between align-items-start flex-column">
+                <h1>Por onde começar?</h1>
+                <p id="text_orientacao" class="mt-4"><b> Entendemos a sensibilidade deste momento difícil que você está enfrentando. Ao procurar pelos nossos serviços, não está apenas em busca de uma construção física, mas sim de uma representação autêntica e reverente do seu ente querido. Nosso propósito é auxiliá-lo na criação de um memorial duradouro, seja ele um túmulo ou uma foto em porcelana, que honre e preserve a memória da pessoa que você ama. Procure, em nossos serviços caracteríscas da pessoa, como: Religiosidade, gosto por flores, minimalismo e entre outras.</b></p>
+                <div id="frame_btn" class="d-flex w-100 justify-content-between align-items-center flex-wrap">
+                   
+                   <div class="col-lg-4 col-md-6 col-12  d-flex justify-content-start ">
+                    <button id="btn_diversos" class="btn"><b class=" font_10">Serviços diversos</b></button>
+
+                   </div> 
+                      
+                   <div class="col-lg-4  col-md-6 col-12  d-flex justify-content-start mt-md-0 mt-4">
+                    <button id="btn_fotos" class="btn"><b class=" font_10">Fotos em porcelana</b></button>
+
+                   </div>
+                      
+                   <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-start mb-lg-0 mb-4 mt-lg-0 mt-4">
+                    <button id="btn_jazigos" class="btn"><b class=" font_10">Jazigos e Jardineiras</b></button>
+
+                   </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                <img class="img-fluid" src="/static/img/coracao.png" alt="Coração de mãos">
+            </div>
+        </section>
+
+    </section>
+
+{% endblock conteudo %}
