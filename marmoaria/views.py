@@ -6,4 +6,3 @@ from .models import *
 def index(request):
     produtos = Produto.objects.all()
     return render(request, "index.html", {'produtos': produtos})
-

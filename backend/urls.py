@@ -20,7 +20,8 @@ from django.conf.urls.static import static
 from django.urls import path
 from django.urls import include, path
 from marmoaria.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index,name="index")
+    path('', index,name="index"),
 ] 

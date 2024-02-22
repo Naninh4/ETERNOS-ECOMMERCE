@@ -1,7 +1,53 @@
+*{
+    outline: 2px solid #4ac35e !important ;
+}
+
 header{
 	background: linear-gradient(white, white) padding-box, linear-gradient(to right, #89E698, #CAA1FF, #FFCA43) border-box;
     border-bottom: 2px solid transparent;
 }
+footer{
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #89E698, #CAA1FF, #FFCA43) border-box !important;
+    border-top: 2px solid transparent !important;
+}
+
+.apagar{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.apagar_bt{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.apagar_rl{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(10%);
+    transition: all 1s;
+
+}
+
+.botoes :nth-child(2){
+    transition-delay: 700ms !important;
+}
+
+.botoes :nth-child(3){
+    transition-delay: 1000ms !important;
+}
+.mostrar{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+
+
+
 
 .btn-success{
     background-color: #89E698 !important;
@@ -10,6 +56,13 @@ header{
 body{
     font-family: 'Sulphur Point', sans-serif !important;
     color: #555454 !important;
+    margin: 0;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
 }
 
 
@@ -18,7 +71,7 @@ body{
     background-color: rgba(255, 255, 255, 0);
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
     font-family: 'Poiret One', sans-serif !important;
 }
 #btn-ajuda{
@@ -197,4 +250,22 @@ p{
 #btn_jazigos:hover{
     background-color: #4ac35e;
     color:  white;
+}
+
+
+.navegacao > div{
+    border-left: 2px solid #CAA1FF !important;
+    padding: 2% !important;
+
+}
+.navegacao > div > a{
+    text-decoration: none;
+    color: #555454;
+    margin: 0.010rem !important;
+}
+.navegacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }

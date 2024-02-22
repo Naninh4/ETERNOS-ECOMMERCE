@@ -1,55 +1,219 @@
 {% extends 'base.html' %}
 {% block conteudo %}
-    <section  class="container-fluid flex-column" id="banner">
-        <div class="row d-flex w-100">
-            <div class="col-4 p-0 d-flex justify-content-center align-items-center">
-                <img id="img-flor" class="img-fluid " src="/static/img/flor.png" alt="flor de aquarela">
-            </div>
-    
-            <div class="col-8 p-2 d-flex justify-content-center align-items-center">
-                <div class="row align-items-end flex-column ">
-                    <div class="col-12 p-0">
-                        <img id="img-slogan" class="img-fluid " src="/static/img/Slogan.png" alt="Slogan da empresa">
-    
-                    </div>
+<section class="container-fluid flex-column" id="banner">
+    <div class="row d-flex w-100">
+        <div class=" col-4 p-0 d-flex justify-content-center align-items-center apagar">
+            <img id="img-flor" class="img-fluid " src="/static/img/flor.png" alt="flor de aquarela">
+        </div>
+
+        <div class=" col-8 p-2 d-flex justify-content-center align-items-center">
+            <div class="row align-items-end flex-column apagar_rl">
+                <div class="col-12 p-0">
+                    <img id="img-slogan" class="img-fluid " src="/static/img/Slogan.png" alt="Slogan da empresa">
+
                 </div>
-               
-            
             </div>
         </div>
-        <div class="row w-100 p-0 d-flex justify-content-end align-items-end">
-            <button id="btn-contatenos">Contate-nos</button>
-        </div>
-    </section>
-    <section id="comecar" class="container-fluid d-flex justify-content-center">
-        <section class="row d-flex w-100 justify-content-around align-items-center p-lg-5 p-sm-2">
-            <div class="col-md-6 col-sm-12 d-flex justify-content-between align-items-start flex-column">
-                <h1>Por onde começar?</h1>
-                <p id="text_orientacao" class="mt-4"><b> Entendemos a sensibilidade deste momento difícil que você está enfrentando. Ao procurar pelos nossos serviços, não está apenas em busca de uma construção física, mas sim de uma representação autêntica e reverente do seu ente querido. Nosso propósito é auxiliá-lo na criação de um memorial duradouro, seja ele um túmulo ou uma foto em porcelana, que honre e preserve a memória da pessoa que você ama. Procure, em nossos serviços caracteríscas da pessoa, como: Religiosidade, gosto por flores, minimalismo e entre outras.</b></p>
-                <div id="frame_btn" class="d-flex w-100 justify-content-between align-items-center flex-wrap">
-                   
-                   <div class="col-lg-4 col-md-6 col-12  d-flex justify-content-start ">
+    </div>
+    <div class="row w-100 p-0 d-flex justify-content-end align-items-end">
+        <button id="btn-contatenos">Contate-nos</button>
+    </div>
+</section>
+<section id="comecar" class="container-fluid d-flex justify-content-center">
+    <section class="row d-flex w-100 justify-content-around align-items-center p-lg-5 p-sm-2">
+        <div class="col-md-6 col-sm-12 d-flex justify-content-between align-items-start flex-column">
+            <h1 class="apagar">Por onde começar?</h1>
+            <p id="text_orientacao" class="mt-4"><b> Entendemos a sensibilidade deste momento difícil que você está
+                    enfrentando. Ao procurar pelos nossos serviços, não está apenas em busca de uma construção física,
+                    mas sim de uma representação autêntica e reverente do seu ente querido. Nosso propósito é auxiliá-lo
+                    na criação de um memorial duradouro, seja ele um túmulo ou uma foto em porcelana, que honre e
+                    preserve a memória da pessoa que você ama. Procure, em nossos serviços caracteríscas da pessoa,
+                    como: Religiosidade, gosto por flores, minimalismo e entre outras.</b></p>
+            <div id="frame_btn" class="d-flex w-100 justify-content-between align-items-center flex-wrap botoes">
+
+                <div class="col-lg-4 col-md-6 col-12  d-flex justify-content-start apagar">
                     <button id="btn_diversos" class="btn"><b class=" font_10">Serviços diversos</b></button>
 
-                   </div> 
-                      
-                   <div class="col-lg-4  col-md-6 col-12  d-flex justify-content-start mt-md-0 mt-4">
+                </div>
+
+                <div class="col-lg-4  col-md-6 col-12  d-flex justify-content-start mt-md-0 mt-4 apagar">
                     <button id="btn_fotos" class="btn"><b class=" font_10">Fotos em porcelana</b></button>
 
-                   </div>
-                      
-                   <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-start mb-lg-0 mb-4 mt-lg-0 mt-4">
-                    <button id="btn_jazigos" class="btn"><b class=" font_10">Jazigos e Jardineiras</b></button>
+                </div>
 
-                   </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-start mb-lg-0 mb-4 mt-lg-0 mt-4 apagar">
+                    <button id="btn_jazigos" class="btn"><b class=" font_10">Jazigos e Jardineiras</b></button>
 
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-                <img class="img-fluid" src="/static/img/coracao.png" alt="Coração de mãos">
-            </div>
-        </section>
-
+        </div>
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center apagar_rl">
+            <img class="img-fluid" src="/static/img/coracao.png" alt="Coração de mãos">
+        </div>
     </section>
+
+
+</section>
+<section class="container-fluid mt-2">
+    <h4 class="apagar_bt">Serviços Finalizados recentemente</h4>
+    
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <img src="/static/img/t1.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t2.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t3.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t4.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t5.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t5.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t5.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t5.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t5.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t5.png" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="/static/img/t5.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+
+</div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<style class="carrossel">
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-button-next{
+        display: flex;
+    }
+
+    .swiper-wrapper {
+        padding: auto;
+      }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    }
+
+    .swiper-slide img {
+        display: block;
+        object-fit: cover;
+    }
+</style>
+
+
+
+<script>
+    const myObserver1 = new IntersectionObserver((elementos) => {
+        elementos.forEach((item) => {
+            if (item.isIntersecting) {
+                item.target.classList.add('mostrar')
+            } else {
+                item.target.classList.remove('mostrar')
+            }
+
+        })
+    })
+    const myObserver2 = new IntersectionObserver((elementos) => {
+        elementos.forEach((item) => {
+            if (item.isIntersecting) {
+                item.target.classList.add('mostrar')
+            } else {
+                item.target.classList.remove('mostrar')
+            }
+
+        })
+    })
+    const myObserver3 = new IntersectionObserver((elementos) => {
+        elementos.forEach((item) => {
+            if (item.isIntersecting) {
+                item.target.classList.add('mostrar')
+            } else {
+                item.target.classList.remove('mostrar')
+            }
+
+        })
+    })
+
+    const apagar = document.querySelectorAll('.apagar')
+
+    apagar.forEach((element) => myObserver1.observe(element))
+
+    const apagar_rl = document.querySelectorAll('.apagar_rl')
+
+    apagar_rl.forEach((element) => myObserver2.observe(element))
+
+    const apagar_bt = document.querySelectorAll('.apagar_bt')
+
+    apagar_bt.forEach((element) => myObserver3.observe(element))
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 8,
+        spaceBetween: 50,
+        freeMode: true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+//       responsive: {
+//     1200: {
+//       slidesPerView: 6,
+//     },
+//     992: {
+//       slidesPerView: 4,
+//     },
+//     768: {
+//       slidesPerView: 3,
+//     },
+//     576: {
+//       slidesPerView: 2,
+//     },
+//     // Adicione mais breakpoints conforme necessário
+//   },
+    });
+
+</script>
+
+
 
 {% endblock conteudo %}
